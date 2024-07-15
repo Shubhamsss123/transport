@@ -1,0 +1,69 @@
+<?php include_once 'include/header.php';?>
+
+<div id="content">
+<div class="post">
+<!-- Start-->
+
+
+<!-- <link rel="stylesheet" href="css/registration.css"> -->
+
+<!-- Start your code here -->
+<div class="form-style-3">
+<h1 align="middle">Registration</h1>
+<h3 align="middle">The last date of early bird registration is 20th November 2022</h3>
+<form id="reg_form">
+<fieldset><!--<legend>Personal</legend> -->
+<label for="field1"><span>Name<span class="required">*</span></span><input type="text" class="input-field" id="uname" /></label>
+<label for="field2"><span>Email<span class="required">*</span></span><input type="email" class="input-field" id="uemail" /></label>
+<label for="field3"><span>Phone<span class="required">*</span></span><input type="number" class="input-field" id="uphone" /></label>
+<p align="middle">Include ISD code</p>
+<label for="field8"><span>Organisation<span class="required">*</span></span><input type="text" class="input-field" id="uorg" /></label>
+<label for="field6"><span>Address<span class="required">*</span></span><textarea class="textarea-field" id="addr"></textarea></label>
+<label for="field7"><span>PIN Code<span class="required">*</span></span><input type="number" class="input-field" id="pin" /></label>
+<!--
+</fieldset>
+<fieldset><legend>Organisation</legend>
+-->
+ <label for="field9" id="paperdecider"><span>Have an accepted paper?<span class="required">*</span></span>
+    <input type="radio" id="yes" name="yesOrNo" value="yes" onchange="displayQuestion(this.value)" /> Yes
+    <input type="radio" id="no" name="yesOrNo" value="no" onchange="displayQuestion(this.value)" /> No</label><br>
+
+<div id="yesQuestion" style="display:none;"> 
+    <label for="field10"><span>
+      Paper ID<span class="required">*</span></span>
+    <input type="text" name="paperid" id="papid" maxlength="4"  pattern="^0[1-9]|[1-9]\d$" />  
+</label>
+<p align="middle">If you have more than one paper, provide ID of any one. The paper ID can be found in the paper acceptance email.</p>
+<label for="field4"><span>Are you a student? <span class="required">*</span></span>
+	<input type="radio" name="studentyana" id="stuyes" value="student" onchange="checkStudent(this.value)" /> Yes
+	<input type="radio" name="studentyana" id="stuno" value="delegate" onchange="checkStudent(this.value)" checked="checked" /> No</label><br>
+<!--<label for="field4"><span>Registration <span class="required">*</span></span><select class="select-field" id="uregtype">
+<optgroup label="Early Bird (Closes on 20th Nov)" selected="selected">
+<option value="delegate">Delegate</option>
+<option value="student">Student</option>
+</optgroup>
+</select></label>
+-->  
+<div id="noQuestion" style="display:none;">
+  </div>
+<div id="stdinp" style="display:none;">
+	<label for="field13" id="stdid"><span class="input-field">Valid student ID No.<span class="required">*</span></span><input type="text" id="stdid" /></label>
+<p  align="middle">Please fill the <a href="https://forms.gle/NmCHV43BxcpCohU26" target="_blank">Google Form</a> to upload student ID for verification</p><!--XvcPLhg4cdaD5q2C8-->
+
+</div>
+</div>
+<label for="field11" id="totaltab" style="display:none;"><span class="input-field">Registration fees: </span><p id="total"></p></label>
+<label><span> </span><input type="submit" value="Register" id="regsubmitbtn" /></label>
+<!--</fieldset>-->
+</form>
+</div>
+<!--
+<script src="js/jquery-3.6.1.js"></script>
+<script src="js/parser.js"></script>
+-->
+
+<!--end-->
+</div>
+</div>
+<?php include_once 'include/footer.php';?>
+~

@@ -1,0 +1,67 @@
+BODY
+{
+   BACKGROUND-COLOR: white;
+   COLOR: black;
+   FONT-size: 8.5pt; 
+   font-FAMILY: verdana, arial, sans-serif;
+   MARGIN-RIGHT: 0px;
+   font-weight: normal;
+ }
+
+A:link
+{
+   color: #512828;
+   FONT-FAMILY : verdana, arial, sans-serif;
+   font-size: 8.5pt;
+   text-decoration: none;
+   font-weight: normal;
+}
+
+A:visited
+{
+   color: #512828;
+   FONT-FAMILY : verdana, arial, sans-serif;
+   font-size: 8.5pt;
+   TEXT-DECORATION: none;
+   font-weight: normal;
+}
+
+A:hover
+{
+   color: #3355DD;
+   FONT-FAMILY : verdana, arial, sans-serif;
+   font-size: 8.5pt;
+   font-style: normal;
+   line-height: normal;
+   font-variant: normal;
+   text-transform: none;
+   font-weight: normal;
+}
+
+P{
+   COLOR: black;
+   FONT-FAMILY : verdana, arial, sans-serif;
+   font-size :8.5pt;
+   MARGIN-RIGHT: 0px;
+   font-weight: normal;
+}
+
+TD{
+   
+  FONT-FAMILY : verdana, arial, sans-serif;
+  font-size: 8.5pt;
+  MARGIN-RIGHT: 0px;
+  font-weight: normal;
+ }
+
+.main{
+  FONT-FAMILY : verdana, arial, sans-serif;
+  font-size: 8.5pt;
+  color: #3451a8;
+  text-indent: 0px;
+  font-weight: bold;}
+
+.alter1{
+   background-color :#EDEDED; }
+
+.alter2{ background-color :black;  }
